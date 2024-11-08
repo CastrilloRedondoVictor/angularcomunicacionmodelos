@@ -1,0 +1,33 @@
+.parent-container {
+  text-align: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.parent-container h1 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.parent-container h3 {
+  font-size: 1.4rem;
+  color: #b8860b; /* Gold color */
+  margin-top: 20px;
+  font-weight: bold;
+  padding: 10px;
+  border: 2px solid #b8860b;
+  border-radius: 8px;
+  background-color: rgba(255, 215, 0, 0.2); /* Light golden background */
+  display: inline-block;
+}
+
+.sports-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding-top: 20px;
+}

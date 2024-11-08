@@ -1,0 +1,108 @@
+/* Contenedor principal */
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  background-color: #f5f5f5; /* Color de fondo suave y profesional */
+  font-family: 'Roboto', sans-serif;
+  gap: 40px;
+}
+
+/* Título de la página */
+h1 {
+  font-size: 3em;
+  font-weight: 700;
+  color: #333;
+  text-align: center;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.1);
+  transition: color 0.3s ease;
+}
+
+/* Contenedor de los productos */
+.productos-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  width: 100%;
+  max-width: 100%;
+}
+
+/* Contenedor de cada producto */
+.producto {
+  display: inline-block;
+  width: 250px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+  overflow: hidden; /* Esto asegura que el contenido no se desborde */
+}
+
+/* Imagen del producto */
+img {
+  width: 100%;
+  height: 200px; /* Fija una altura de imagen */
+  border-radius: 10px;
+  object-fit: cover; /* Asegura que la imagen se recorte bien */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 15px;
+}
+
+/* Nombre del producto */
+h3 {
+  font-size: 1.2em;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+  transition: color 0.3s ease;
+}
+
+/* Precio del producto */
+span {
+  font-size: 1.1em;
+  color: #555;
+  font-weight: 500;
+  display: block;
+  margin-top: 10px;
+}
+
+/* Efecto hover sobre el producto */
+.producto:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto hover en la imagen */
+img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Diseño responsivo para pantallas pequeñas */
+@media (max-width: 768px) {
+  :host {
+    padding: 20px;
+  }
+
+  .productos-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  div {
+    width: 90%;
+    max-width: 350px;
+    margin: 10px auto;
+  }
+}

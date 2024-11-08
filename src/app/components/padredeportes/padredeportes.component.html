@@ -1,0 +1,12 @@
+<div class="parent-container">
+  <h1>DEPORTES</h1>
+  <h3 *ngIf="favorito != ''">Favorito: {{ favorito }}</h3>
+
+  <div class="sports-container">
+    <app-hijodeporte
+      *ngFor="let deporte of deportes"
+      [deporte]="deporte"
+      (setFavorito)="setFavorito($event)"
+    ></app-hijodeporte>
+  </div>
+</div>

@@ -1,0 +1,47 @@
+<div class="coche-container">
+  <div class="coche-header">
+    Información del Coche
+  </div>
+
+  <div class="coche-property">
+    <label><span class="coche-icon">🚗</span> Marca:</label>
+    <div class="coche-value">
+      <span>{{ coche.marca }}</span>
+    </div>
+  </div>
+
+  <div class="coche-property">
+    <label><span class="coche-icon">📄</span> Modelo:</label>
+    <div class="coche-value">
+      <span>{{ coche.modelo }}</span>
+    </div>
+  </div>
+
+  <div class="coche-property">
+    <label><span class="coche-icon">💨</span> Velocidad:</label>
+    <div class="coche-value">
+      <span>{{ coche.velocidad }} km/h</span>
+    </div>
+  </div>
+
+  <div class="coche-property">
+    <label><span class="coche-icon">⚡</span> Aceleración:</label>
+    <div class="coche-value">
+      <span>{{ coche.aceleracion }} m/s²</span>
+    </div>
+  </div>
+
+  <div class="coche-status" [ngClass]="{ 'on': coche.estado, 'off': !coche.estado }">
+    {{ coche.estado ? 'Encendido' : 'Apagado' }}
+  </div>
+
+  <!-- Action Buttons -->
+  <div class="button-group">
+    <button (click)="toggleEncendido()" class="action-button encender">
+      {{ coche.estado ? 'Apagar' : 'Encender' }}
+    </button>
+    <button (click)="acelerar()" class="action-button acelerar">
+      Acelerar
+    </button>
+  </div>
+</div>

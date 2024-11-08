@@ -1,0 +1,104 @@
+.coche-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 12px;
+  padding: 20px;
+  max-width: 350px;
+  margin: 20px auto;
+  background: linear-gradient(135deg, #e0f7fa, #b2ebf2);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.coche-header {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #00796b;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.coche-property {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin: 10px 0;
+  font-size: 1.1rem;
+}
+
+.coche-property label {
+  font-weight: 600;
+  color: #004d40;
+}
+
+.coche-value {
+  display: flex;
+  align-items: center;
+}
+
+.coche-value span {
+  margin-left: 8px;
+  font-size: 1rem;
+  color: #00796b;
+}
+
+.coche-icon {
+  font-size: 1.2rem;
+  color: #00897b;
+}
+
+.coche-status {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 20px;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.coche-status.on {
+  background-color: #4caf50;
+}
+
+.coche-status.off {
+  background-color: #f44336;
+}
+
+/* Button Group */
+.button-group {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+/* Buttons */
+.action-button {
+  padding: 10px 16px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.action-button.encender {
+  background-color: #00796b;
+}
+
+.action-button.encender:hover {
+  background-color: #004d40;
+}
+
+.action-button.acelerar {
+  background-color: #ff9800;
+}
+
+.action-button.acelerar:hover {
+  background-color: #e65100;
+}
